@@ -1,0 +1,15 @@
+<script lang="ts">
+	import classnames from 'classnames';
+	export let className = '';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 24 24"
+	fill="currentColor"
+	class={classnames('', className)}
+>
+	<path
+		d="M18.2073 9.04304 12.0002 2.83594 5.79312 9.04304 7.20733 10.4573 12.0002 5.66436 16.7931 10.4573 18.2073 9.04304ZM5.79297 14.9574 12.0001 21.1646 18.2072 14.9574 16.793 13.5432 12.0001 18.3361 7.20718 13.5432 5.79297 14.9574Z"
+	/>
+</svg>
