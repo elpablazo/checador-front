@@ -21,7 +21,7 @@
 	export let disabled: boolean = false;
 
 	const classname =
-		'px-4 py-3 bg-gray-100 rounded-lg text-black/70 disabled:bg-gray-200 disabled:placeholder:text-gray-400 disabled:text-gray-400 outline-0 focus:ring-1 ring-black focus:bg-white focus:shadow';
+		'block w-full px-4 py-2 text-gray-700 border-0 transition-all rounded-md enabled:shadow-sm ring-1 ring-inset ring-gray-300 outline-0 ring-offset-0 placeholder:text-gray-400 disabled:bg-gray-100 enabled:focus:ring-black ring-offset-0';
 </script>
 
 <div class="flex flex-col gap-1">
@@ -32,5 +32,9 @@
 		<input type="password" {name} {placeholder} {disabled} bind:value class={classname} />
 	{:else if type === 'number'}
 		<input type="number" {name} {placeholder} {disabled} bind:value class={classname} />
+	{:else if type === 'email'}
+		<input type="email" {name} {placeholder} {disabled} bind:value class={classname} />
+	{:else if type === 'tel'}
+		<input type="tel" {name} {placeholder} {disabled} bind:value class={classname} />
 	{/if}
 </div>
