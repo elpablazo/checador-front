@@ -63,7 +63,7 @@
 {/if}
 
 <nav class="flex justify-between p-4 bg-white">
-	<a href="/">
+	<a href="/" aria-label="Logo de Passport">
 		<div class="flex gap-2 transition-all hover:text-black/60">
 			<Fingerprint />
 			<h1 class="flex items-center text-xl font-bold">Passport</h1>

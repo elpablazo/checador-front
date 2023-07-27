@@ -8,6 +8,9 @@ export default {
 		extend: {
 			textUnderlineOffset: {
 				6: '6px'
+			},
+			borderWidth: {
+				1: '1px'
 			}
 		}
 	},
