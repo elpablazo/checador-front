@@ -4,7 +4,7 @@
 	import { fly } from 'svelte/transition';
 
 	import Fingerprint from '$components/icons/Fingerprint.svelte';
-	import Button from '$components/Button.svelte';
+	import Button from '$components/form/Button.svelte';
 	import BurgerMenu from '$components/icons/BurgerMenu.svelte';
 	import XSquare from '$components/icons/XSquare.svelte';
 
