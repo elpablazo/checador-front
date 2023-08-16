@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Todo: hacer este componente perrón
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
 
@@ -12,7 +13,7 @@
 		if (browser) {
 			const leaflet = await import('leaflet');
 
-			map = leaflet.map(mapElement).setView([latitude, longitude], 13);
+			map = leaflet.map(mapElement).setView([latitude, longitude], 18);
 
 			leaflet
 				.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
