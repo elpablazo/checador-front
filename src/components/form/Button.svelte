@@ -2,6 +2,7 @@
 	export let primary: boolean = false;
 	export let type: 'button' | 'submit' | 'reset' = 'button';
 	export let disabled: boolean = false;
+	export let className: string = '';
 </script>
 
 <button
@@ -10,7 +11,7 @@
 		primary
 			? 'text-white bg-black hover:bg-black/80 disabled:bg-gray-300 hover:shadow-sm ring-black transition-all duration-200 active:enabled:scale-[0.97]'
 			: 'text-black hover:text-black/60 disabled:text-gray-300 ring-transparent'
-	}`}
+	} ${className}`}
 	{type}
 	{disabled}
 >
