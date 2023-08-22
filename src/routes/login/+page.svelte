@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import { signIn } from '@auth/sveltekit/client';
 	import * as yup from 'yup';
 
@@ -17,6 +18,7 @@
 		}
 	});
 
+
 	const formProps = {
 		initialValues: {
 			email: '',
@@ -30,6 +32,7 @@
 			// Todo: Handle errors
 			await signIn('credentials', {
 				...values
+
 			});
 		}
 	};
