@@ -14,7 +14,8 @@
     "test:integration": "playwright test",
     "test:unit": "vitest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@playwright/test": "^1.28.1",
@@ -57,7 +58,9 @@
     "classnames": "^2.3.2",
     "felte": "^1.2.11",
     "leaflet": "^1.9.4",
+    "patch-package": "^8.0.0",
     "svelte-forms-lib": "^2.0.1",
+    "svelte-french-toast": "^1.2.0",
     "yup": "^1.2.0"
   }
 }
